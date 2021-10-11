@@ -1,2 +1,2 @@
 #!/bin/bash
-mpv $(cat class.txt | dmenu -l 3 -p "Search: " | awk '{print $3}')
+mpv $(cat ~/myNote/class.txt | dmenu -i -l 5 -p "Search: " | awk '{print $3}')
