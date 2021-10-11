@@ -1,0 +1,7 @@
+#!/bin/bash
+vdo=$(cat class.txt | dmenu -l 3 -p "Search: " | awk '{print $3}')
+if [ vdo == "" ]; then
+        exit
+else
+        mpv $vdo
+fi
